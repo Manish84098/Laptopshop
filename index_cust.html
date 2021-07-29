@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Customer Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css1/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		#loading {
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			background: white url('img/load1.gif') no-repeat center;
+			z-index: 999999;
+		}
+	</style>
+</head>
+
+<body onload="pageload()">
+	<div id="loading">
+
+	</div>
+
+	<img class="wave" src="img1/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img1/shop2.png">
+		</div>
+		<div class="login-content">
+			<div class="login_cart">
+				<div>
+					<form>
+						<img src="img1/avatar.svg">
+						<h2 class="title">Customer</h2>
+						<div class="input-div one">
+							<div class="i">
+								<i class="fas fa-user"></i>
+							</div>
+							<div class="div">
+								<h5>Username</h5>
+								<input id="username" autocomplete="off" type="text" class="input">
+							</div>
+						</div>
+						<div class="input-div pass">
+							<div class="i">
+								<i class="fas fa-lock"></i>
+							</div>
+							<div class="div">
+								<h5>Password</h5>
+								<input id="password" type="password" class="input">
+							</div>
+						</div>
+						<a href="#">Forgot Password?</a>
+						<!-- <input type="button" onclick="submit();" class="btn" value="Login"> -->
+						<button class="btn" type='reset' onclick="sub();">Submit</button>
+					</form>
+				</div>
+				<div>
+					<a href="Registration.html">New Registration</a>
+					<a href="index_owner.html">Owner Login</a>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<script>
+		var preloader = document.getElementById("loading");
+
+		function pageload() {
+
+			setInterval(function () { preloader.style.display = "none"; }, 3000);
+		}
+	</script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+</body>
+
+</html>
